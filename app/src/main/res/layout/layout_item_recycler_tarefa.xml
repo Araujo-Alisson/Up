@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    app:layout_marginBaseline="5dp"
+    android:id="@+id/card_produto"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/item_contener"
+        android:layout_margin="5dp">
+
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/linha_hr_titulo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/txt_minutos"
+            />
+
+        <TextView
+            android:id="@+id/txt_horario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="00"
+            android:textColor="@color/cinza_escuro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txt_minutos"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_minutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/cinza_escuro"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_horario"
+            app:layout_constraintBottom_toTopOf="parent"
+            android:layout_marginStart="10dp"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/linha_hr_titulo"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_minutos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:dividerColor="@color/black2" />
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/img_delet"
+            android:src="@drawable/ic__edit_item_tarefa"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_delet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_baseline_delete_item"
+            android:layout_marginEnd="10dp"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/linha_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintTop_toTopOf="@id/txt_descricao"
+            android:layout_marginBottom="10dp"
+            app:dividerColor="@color/black2"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt_descricao"
+            android:text=""
+            style="@style/txt_item_recycler"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_titulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/linha_detalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:dividerColor="@color/black2"
+            android:visibility="gone"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintTop_toTopOf="@id/txt_detalhes"
+            />
+
+        <TextView
+            android:id="@+id/txt_detalhes"
+            android:text=""
+            style="@style/txt_item_recycler"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_descricao"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

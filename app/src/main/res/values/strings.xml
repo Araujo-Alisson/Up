@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Up</string>
+    <string name="channel_description">channel_description</string>
+    <string name="channel_name">channel_name</string>
+
+    <string name="up_tasks">Up tasks</string>
+    <string name="email">Email</string>
+    <string name="Senha">Senha</string>
+    <string name="bt_entrar">Entrar</string>
+    <string name="ou">OU</string>
+    <string name="bt_cadastrar">Cadastrar</string>
+    <string name="assinatura">ByAlisson</string>
+    <string name="constante_dia">Dia</string>
+    <string name="constante_horas">Horas</string>
+    <string name="hrs_ui">00</string>
+    <string name="min_ui">00</string>
+    <string name="dois_pontos">:</string>
+    <string name="hint_titulo">Titulo</string>
+    <string name="hint_descricao">Descriçao</string>
+    <string name="hint_detalhes">Detalhes</string>
+    <string name="txt_ckeckin_descricao">+descrições</string>
+    <string name="txt_ckeckin_detalhes">+detalhes</string>
+    <string name="txt_ckeckin_etiquetas_de_prioridades">Etiquetas de Prioridades</string>
+    <string name="bt_salvar_tarefa">Salvar tarefa</string>
+    <string name="txt_etiqueta_pra_ontem">pra ontem</string>
+    <string name="txt_etiqueta_no_rapido">no rapido</string>
+    <string name="txt_etiqueta_ta_suave">ta suave</string>
+    <string name="txt_cabecalho_cadastrar">Cadastre-se e organize sua rotina</string>
+
+
+    <string name="alertDialogErroLembrete">por limitações, o lembrete só podera ser realizado no dia atual, estamos trabalhando para" +
+                        " resolver isto em uma nova atualização, desculpe o transtorno!</string>
+    <string name="txt_checkin_lembrete">lembrete</string>
+    <string name="etiquetas">etiquetas</string>
+
+
+</resources>

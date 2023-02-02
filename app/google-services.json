@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "322871692997",
+    "project_id": "up-task",
+    "storage_bucket": "up-task.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322871692997:android:d863eeec29bb6c1e306aac",
+        "android_client_info": {
+          "package_name": "com.agenda.up"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322871692997-vneo5lg9jvfcd1mfh72govqm2j072vru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlyy6yos4hgh2-sqx7Wm54oYU3u2bWjOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322871692997-vneo5lg9jvfcd1mfh72govqm2j072vru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

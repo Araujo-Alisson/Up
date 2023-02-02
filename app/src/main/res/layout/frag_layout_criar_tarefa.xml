@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_frag_criar_tarefa"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt_ano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/view_dia"
+        app:layout_constraintEnd_toStartOf="@id/txt_context_horas"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/txt_mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/view_dia"
+        app:layout_constraintEnd_toStartOf="@id/txt_context_horas"
+        app:layout_constraintTop_toBottomOf="@id/txt_ano"
+        />
+
+
+    <View
+        android:id="@+id/view_hora"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_Email"
+        android:background="@drawable/custom_view_dia"
+        android:layout_marginEnd="30dp"
+        />
+    <View
+        android:id="@+id/view_dia"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_Email"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/custom_view_dia"
+        />
+
+    <TextView
+        android:id="@+id/txt_context_dia"
+        android:text="@string/constante_dia"
+        style="@style/view_dia_horas"
+        app:layout_constraintStart_toStartOf="@id/view_dia"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/view_dia"
+        app:layout_constraintEnd_toEndOf="@id/view_dia"
+        />
+    <TextView
+        android:id="@+id/txt_context_horas"
+        android:text="@string/constante_horas"
+        style="@style/view_dia_horas"
+        app:layout_constraintStart_toStartOf="@id/view_hora"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/view_hora"
+        app:layout_constraintEnd_toEndOf="@id/view_hora"
+        />
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/view_dia"
+        app:layout_constraintEnd_toEndOf="@id/view_dia"
+        app:layout_constraintTop_toTopOf="@id/view_dia"
+        app:layout_constraintBottom_toBottomOf="@id/view_dia"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_hrs"
+        android:text=""
+        style="@style/txt_data_hrs_min_ui"
+        app:layout_constraintStart_toStartOf="@id/view_hora"
+        app:layout_constraintTop_toTopOf="@id/view_hora"
+        app:layout_constraintEnd_toEndOf="@id/info_div"
+        app:layout_constraintBottom_toBottomOf="@id/view_hora"
+        />
+    <TextView
+        android:id="@+id/info_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dois_pontos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        app:layout_constraintStart_toStartOf="@id/view_hora"
+        app:layout_constraintEnd_toEndOf="@id/view_hora"
+        app:layout_constraintTop_toTopOf="@id/view_hora"
+        />
+
+    <TextView
+        android:id="@+id/txt_min"
+        android:text=""
+        style="@style/txt_data_hrs_min_ui"
+        app:layout_constraintStart_toEndOf="@id/info_div"
+        app:layout_constraintTop_toTopOf="@id/view_hora"
+        app:layout_constraintBottom_toBottomOf="@id/view_hora"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_titulo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/red"
+        app:hintTextColor="@color/red"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxLength="26"
+            android:inputType="textEmailAddress"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_layout_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_Email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/hint_descricao"
+        android:textColorHint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:maxLength="26"
+            android:inputType="text"
+            android:visibility="gone"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_layout_detalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_layout_descricao"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/hint_detalhes"
+        android:textColorHint="@color/black"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_detalhes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:maxLength="160"
+            android:visibility="gone"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_ckeckin_descricao"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/layout_Email"
+        app:layout_constraintTop_toBottomOf="@id/edit_layout_detalhes"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_ckeckin_detalhes"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/layout_Email"
+        app:layout_constraintTop_toBottomOf="@id/checkBox"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/etiquetas"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/layout_Email"
+        app:layout_constraintTop_toBottomOf="@id/checkBox2"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_checkin_lembrete"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/layout_Email"
+        app:layout_constraintTop_toBottomOf="@id/checkBox3"
+        />
+
+    <Button
+        android:id="@+id/bt_salvar"
+        style="@style/bt_form"
+        android:background="@drawable/bg_bt_entrar_login"
+        app:layout_constraintTop_toBottomOf="@id/checkBox4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/bt_salvar_tarefa"
+        android:textAllCaps="false"
+        />
+
+    <RadioGroup
+        android:id="@+id/prioridades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_layout_detalhes"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        android:visibility="gone"
+        >
+
+        <RadioButton
+            android:id="@+id/bt_radio_duque"
+            android:text="@string/txt_etiqueta_pra_ontem"
+            style="@style/radio_group_etiquetas"
+            android:background="@drawable/bg_radio_dugue"
+            />
+
+        <RadioButton
+            android:id="@+id/bt_radio_norapido"
+            android:text="@string/txt_etiqueta_no_rapido"
+            style="@style/radio_group_etiquetas"
+            android:background="@drawable/bg_radio_norapido"
+            />
+
+        <RadioButton
+            android:id="@+id/bt_radio_suave"
+            android:text="@string/txt_etiqueta_ta_suave"
+            style="@style/radio_group_etiquetas"
+            android:background="@drawable/bg_radio_suave"
+            />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

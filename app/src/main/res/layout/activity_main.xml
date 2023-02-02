@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/degrade"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/up_tasks"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        app:lottie_rawRes="@raw/login"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/back_email_senha"
+        android:orientation="vertical"
+        >
+
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:drawableStart="@drawable/ic_email_24"
+            android:hint="@string/email"
+            style="@style/edit_text_cadastro"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            />
+
+        <EditText
+            android:id="@+id/edit_senha"
+            android:hint="@string/Senha"
+            style="@style/edit_text_cadastro"
+            android:drawableStart="@drawable/ic_password_24"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            />
+
+        <Button
+            android:id="@+id/bt_logar"
+            style="@style/bt_form"
+            android:text="@string/bt_entrar"
+            android:background="@drawable/bg_bt_entrar_login"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ou"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"/>
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        style="@style/bt_form"
+        android:text="@string/bt_cadastrar"
+        android:background="@drawable/bg_bt_entrar_login"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textStyle="bold"
+        android:text="@string/assinatura"
+        android:textColor="@color/white"
+        android:layout_marginTop="68dp"
+        android:layout_gravity="center"/>
+
+
+
+</LinearLayout>

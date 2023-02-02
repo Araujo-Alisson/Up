@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/degrade"
+    tools:context=".view.FormCadastro">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/txt_cabecalho_cadastrar"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:textColor="@color/white"
+      android:gravity="center"
+      android:layout_gravity="center"
+      android:layout_marginTop="100dp"
+
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="10dp"
+      android:background="@drawable/back_email_senha"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        android:id="@+id/txt_erro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+      />
+
+
+    <EditText
+        style="@style/edit_text_cadastro"
+        android:id="@+id/edit_email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"/>
+
+    <EditText
+        style="@style/edit_text_cadastro"
+        android:id="@+id/edit_senha"
+        android:hint="@string/Senha"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        />
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:text="@string/bt_cadastrar"
+        style="@style/bt_form"
+        android:textAllCaps="false"
+
+        />
+
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_calendario"
+        android:title="Calendario"
+        android:icon="@drawable/ic_calendar"
+        />
+
+    <item
+        android:id="@+id/bottom_criar"
+        android:title="Criar"
+        android:icon="@drawable/ic_add_task"
+        />
+    <item
+        android:id="@+id/bottom_tarefas"
+        android:title="tarefas"
+        android:icon="@drawable/ic_edit_calendar"
+
+        />
+
+</menu>

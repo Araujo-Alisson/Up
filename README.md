@@ -62,9 +62,6 @@ Ou faça o download da <a href="apk/app-debug.apk?raw=true">APK diretamente</a>.
 <img width="60%" src="https://user-images.githubusercontent.com/124219960/216390520-a116e913-07e5-41aa-9593-2e04b5fef07d.png"/>
 <br>
 
-## API de terceiros
-
-COLOQUE O NOME, LINK E DESCRIÇÃO DAS APIS UTILIZADAS NO PROJETO
 
 ## Recursos
 
@@ -79,8 +76,6 @@ Criando uma nova tarefa com o opcional de adicionar uma descriçao.
 Criando uma tarefa com opção de lembrete.
 
 # Licença
-
-COLOQUE A LICENÇA - https://opensource.org/licenses
 
 ```xml
    Direitos autorais [2023] [Alisson Pereira de Araujo Souza]

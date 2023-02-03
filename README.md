@@ -21,7 +21,6 @@ Aplicativo de listagem de tarefas criada pelo usuario com uma elegante RecyclerV
 </br>
 
 <p float="left" align="center">
-<img alt="screenshot" width="30%" src="https://user-images.githubusercontent.com/124219960/216360794-1f49c9f7-01a7-45c6-af3c-467f3c1bb7f0.png"/>
   <img alt="screenshot" width="30%" src="https://user-images.githubusercontent.com/124219960/216361157-08f69477-592d-4d77-a555-c651a345b8a7.png"/>
   <img alt="screenshot" width="30%" src="https://user-images.githubusercontent.com/124219960/216361318-582797df-8aef-4c73-88f5-f07b4c8f951e.png"/>
   <img alt="screenshot" width="30%" src="https://user-images.githubusercontent.com/124219960/216361483-5b2da61d-337b-4e3a-87db-41c1b2494045.png"/>
@@ -54,7 +53,6 @@ Ou faça o download da <a href="apk/app-debug.apk?raw=true">APK diretamente</a>.
 - Bibliotecas 
   - [Lottie](https://github.com/LottieFiles/awesome-lottie): Para implementar animações no projeto.
   - fragment: Para criar 1 ou mais ambientes na mesma activity.
-  - [firebase-auth](https://github.com/firebase/quickstart-android): sistema de autenticação seguro, além de melhorar a experiência de login e integração para os usuários finais.
   
 
 ## Arquitetura

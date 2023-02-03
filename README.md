@@ -30,6 +30,8 @@ Aplicativo de listagem de tarefas criada pelo usuario com uma elegante RecyclerV
 ## Download
 <a href='https://play.google.com/store/apps/details?id=com.agenda.up&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="20%" alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/pt-br_badge_web_generic.png'/></a>
 
+(Já foi feito todo o processo para postar o app na play store, aguardando aprovação da play console).
+
 Ou faça o download da <a href="apk/app-debug.apk?raw=true">APK diretamente</a>. Você pode ver <a href="https://www.google.com/search?q=como+instalar+um+apk+no+android">aqui</a> como instalar uma APK no seu aparelho android.
 
 ## Tecnologias usadas e bibliotecas de código aberto
